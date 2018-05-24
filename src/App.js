@@ -12,10 +12,13 @@ class App extends Component {
 
     return (
       <div className="App">
-        <h1>Hi there,</h1>
-        <h2>I am Selectron-9000, the ultimate multi-select.</h2>
-
-        <Selectron />
+        <header>
+          <h1>Hi there,</h1>
+          <h2>I am Selectron-9000, the ultimate multi-select.</h2>
+        </header>
+        <section className="filter-results">
+          <Selectron />
+        </section>
       </div>
     );
   }

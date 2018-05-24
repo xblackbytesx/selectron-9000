@@ -1,0 +1,15 @@
+$gutter: 24px;
+$gutter-half: ($gutter / 2);
+
+$selectron-bg-color: #EEE;
+$selectron-border-color: darken($selectron-bg-color, 7);
+
+.selectron {
+  background-color: $selectron-bg-color;
+  border: 1px solid $selectron-border-color;
+  border-radius: 9px;
+
+  &__wrapper {
+    padding: $gutter;
+  }
+}
