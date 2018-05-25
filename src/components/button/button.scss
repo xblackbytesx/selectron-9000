@@ -1,3 +1,5 @@
+@import "../../settings";
+
 $button-primary-bg-color: #36C;
 $button-primary-color: #FFF;
 
@@ -11,6 +13,6 @@ $button-primary-color: #FFF;
     color: $button-primary-color;
     border: 1px solid $button-primary-bg-color;
     border-radius: 4px;
-    padding: 6px 12px;
+    padding: ($gutter-half / 2) $gutter-half;
   }
 }
