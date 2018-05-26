@@ -17,7 +17,7 @@ class App extends Component {
           <h2>I am Selectron-9000, the ultimate multi-select.</h2>
         </header>
         <section className="filter-results">
-          <Selectron />
+          <Selectron props={this.state} />
         </section>
       </div>
     );
