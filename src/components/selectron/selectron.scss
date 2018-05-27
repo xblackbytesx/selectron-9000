@@ -1,5 +1,4 @@
-$gutter: 24px;
-$gutter-half: ($gutter / 2);
+@import "../../settings";
 
 $selectron-bg-color: #EEE;
 $selectron-border-color: darken($selectron-bg-color, 7);

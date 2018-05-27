@@ -1,7 +1,7 @@
 @import "../../settings";
 
-$button-primary-bg-color: #36C;
-$button-primary-color: #FFF;
+$button-primary-bg-color: $color-primary;
+$button-primary-color: $color-secondary;
 
 .button {
   display: inline-block;

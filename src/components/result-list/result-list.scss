@@ -1,0 +1,25 @@
+@import "../../settings";
+
+$result-list-checkbox-border-color: $color-primary;
+$result-list-checkbox-bg-color: $color-secondary;
+
+.selectron {
+  &__result-list {
+    height: 200px;
+    border-width: $gutter 0;
+    border-style: solid;
+    border-color: #EEE;
+    overflow-y: scroll;
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    input {
+      background-color: $result-list-checkbox-bg-color;
+      border: 1px solid $result-list-checkbox-border-color;
+    }
+  }
+}
