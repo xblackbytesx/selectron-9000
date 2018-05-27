@@ -1,5 +1,9 @@
 @import "settings";
 
+body {
+  padding: $gutter-half;
+}
+
 header {
   text-align: center;
 }
