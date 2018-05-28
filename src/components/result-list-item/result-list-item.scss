@@ -1,0 +1,49 @@
+@import "../../settings";
+
+$result-list-checkbox-border-color: $color-primary;
+$result-list-checkbox-bg-color: $color-secondary;
+
+.awesome-checkbox {
+  position: relative;
+  display: inline-block;
+  height: 32px;
+
+  span {
+    margin-left: 20px;
+
+    &::before {
+      width: 25px;
+      height: 25px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: $result-list-checkbox-bg-color;
+      border: 1px solid $result-list-checkbox-border-color;
+      cursor: pointer;
+      content: '';
+    }
+
+    &::after {
+      width: 9px;
+      height: 5px;
+      position: absolute;
+      top: 6px;
+      left: 7px;
+      background: transparent;
+      border: 3px solid #333;
+      border-top: none;
+      border-right: none;
+      transform: rotate(-45deg);
+      opacity: 0.2;
+      content: '';
+    }
+
+    &:hover::after {
+      opacity: 0.5;
+    }
+  }
+
+  input[type="checkbox"]:checked + span::after {
+    opacity: 1;
+  }
+}
