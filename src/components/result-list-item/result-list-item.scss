@@ -13,10 +13,18 @@ $result-list-checkbox-bg-color: $color-secondary;
   margin-bottom: 3px;
   cursor: pointer;
 
-
-
   input[type="checkbox"] {
     visibility: hidden;
+
+    &:checked {
+      + span {
+        color: $result-list-checkbox-border-color;
+
+        &::before {
+          background: $result-list-checkbox-border-color;
+        }
+      }
+    }
   }
 
   span {
@@ -43,9 +51,5 @@ $result-list-checkbox-bg-color: $color-secondary;
     &:hover::after {
       opacity: 0.5;
     }
-  }
-
-  input[type="checkbox"]:checked + span::before {
-    background: $result-list-checkbox-border-color;
   }
 }

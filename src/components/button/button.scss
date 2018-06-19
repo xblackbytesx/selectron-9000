@@ -25,4 +25,8 @@ $button-primary-color: $color-secondary;
   &:hover {
     background-color: lighten($button-primary-bg-color, 5);
   }
+
+  &::-moz-focus-inner {
+    border: 0;
+  }
 }

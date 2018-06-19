@@ -1,7 +1,7 @@
 @import "../../settings";
 
 $selectron-bg-color: $primary-bg-color;
-$selectron-border-color: darken($selectron-bg-color, 7);
+$selectron-border-color: #D1D0CE;
 
 .selectron {
   background-color: $selectron-bg-color;
