@@ -7,6 +7,7 @@ $button-primary-color: $color-secondary;
   display: inline-block;
   background: none;
   outline: 0;
+  cursor: pointer;
 
   &--primary {
     background-color: $button-primary-bg-color;
@@ -14,5 +15,14 @@ $button-primary-color: $color-secondary;
     border: 1px solid $button-primary-bg-color;
     border-radius: 4px;
     padding: ($gutter-half / 2) $gutter-half;
+  }
+
+  &--fullwidth {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  &:hover {
+    background-color: lighten($button-primary-bg-color, 5);
   }
 }

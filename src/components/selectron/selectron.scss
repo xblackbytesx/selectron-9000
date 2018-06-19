@@ -1,6 +1,6 @@
 @import "../../settings";
 
-$selectron-bg-color: #EEE;
+$selectron-bg-color: $primary-bg-color;
 $selectron-border-color: darken($selectron-bg-color, 7);
 
 .selectron {
@@ -10,5 +10,13 @@ $selectron-border-color: darken($selectron-bg-color, 7);
 
   &__wrapper {
     padding: $gutter;
+  }
+
+  &__title h1 {
+    margin: 0 0 $gutter;
+  }
+
+  &__action {
+    text-align: center;
   }
 }

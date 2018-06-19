@@ -1,9 +1,25 @@
 @import "../../settings";
 
 .searchbox {
-  width: 100%;
-  background-color: #FFF;
-  border: 1px solid #36C;
-  padding: $gutter-half;
-  border-radius: 4px;
+  position: relative;
+
+  &__input {
+    width: 100%;
+    background-color: #FFF;
+    border: 1px solid #36C;
+    padding: $gutter-half;
+    border-radius: 4px;
+  }
+
+  &::after {
+    display: block;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 50%;
+    right: $gutter-half;
+    transform: translateY(-50%);
+    background-image: url('./search.svg');
+    content: '';
+  }
 }

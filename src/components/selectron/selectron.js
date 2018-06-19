@@ -13,6 +13,8 @@ const Selectron = (props) => (
       <div className="selectron__content">
         <SearchBox placeholder="Zoek op ..." />
         <ResultList props={props.props.data} />
+      </div>
+      <div className="selectron__action">
         <Button>Toepassen</Button>
       </div>
     </div>

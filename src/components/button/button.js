@@ -9,7 +9,7 @@ const Button = (props) => {
   return (
     <button
       type="button"
-      className="button button--primary">
+      className="button button--primary button--fullwidth">
       {children}
     </button>
   )

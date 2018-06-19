@@ -5,16 +5,18 @@ $result-list-checkbox-bg-color: $color-secondary;
 
 .selectron {
   &__result-list {
-    height: 200px;
+    height: 250px;
     border-width: $gutter 0;
     border-style: solid;
-    border-color: #EEE;
+    border-color: $primary-bg-color;
     overflow-y: scroll;
 
     ul {
       margin: 0;
       padding: 0;
       list-style: none;
+      display: flex;
+      flex-flow: row wrap;
     }
   }
 }

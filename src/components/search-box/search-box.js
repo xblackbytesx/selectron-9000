@@ -2,8 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './searchbox.css';
 
+import './search.svg';
+
 const SearchBox = (props) => (
-  <input className="searchbox" type="search" placeholder={props.placeholder} />
+  <span className="searchbox">
+    <input className="searchbox__input" type="search" placeholder={props.placeholder} />
+  </span>
 )
 
 SearchBox.propTypes = {
