@@ -14,7 +14,7 @@ $button-primary-color: $color-secondary;
     color: $button-primary-color;
     border: 1px solid $button-primary-bg-color;
     border-radius: 4px;
-    padding: ($gutter-half / 2) $gutter-half;
+    padding: $gutter-half;
   }
 
   &--fullwidth {
