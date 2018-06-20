@@ -14,7 +14,7 @@ class ResultListItem extends Component {
 
   render() {
     return(
-      <li onClick={this.toggleState} className="selectron__result-list__item">
+      <li onClick={this.toggleState} className="result-list__item">
         <label className="awesome-checkbox">
           <input type="checkbox" />
           <span dangerouslySetInnerHTML={this.props.value}></span>

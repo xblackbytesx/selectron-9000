@@ -1,14 +1,29 @@
 @import "../../settings";
 
+$searchbox-bg-color: $color-secondary;
+$searchbox-color: $input-color-primary;
+$searchbox-placeholder-color: $placeholder-color-primary;
+$searchbox-placeholder-shown-border-color: $border-color-secondary;
+$searchbox-border-color: $color-primary;
+
 .searchbox {
   position: relative;
 
   &__input {
     width: 100%;
-    background-color: #FFF;
-    border: 1px solid #C3C2C0;
+    background-color: $searchbox-bg-color;
+    border: 1px solid $searchbox-border-color;
     padding: $gutter-half;
     border-radius: 4px;
+    color: $searchbox-color;
+
+    &::placeholder {
+      color: $searchbox-placeholder-color;
+    }
+
+    &:placeholder-shown {
+      border-color: $searchbox-placeholder-shown-border-color;
+    }
   }
 
   &::after {

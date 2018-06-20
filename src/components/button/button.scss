@@ -1,8 +1,5 @@
 @import "../../settings";
 
-$button-primary-bg-color: $color-primary;
-$button-primary-color: $color-secondary;
-
 .button {
   display: inline-block;
   background: none;
@@ -12,7 +9,7 @@ $button-primary-color: $color-secondary;
   &--primary {
     background-color: $button-primary-bg-color;
     color: $button-primary-color;
-    border: 1px solid $button-primary-bg-color;
+    border: 1px solid $button-primary-border-color;
     border-radius: 4px;
     padding: $gutter-half;
   }
@@ -23,7 +20,7 @@ $button-primary-color: $color-secondary;
   }
 
   &:hover {
-    background-color: lighten($button-primary-bg-color, 5);
+    background-color: $button-primary-hover-bg-color;
   }
 
   &::-moz-focus-inner {

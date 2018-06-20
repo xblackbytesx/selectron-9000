@@ -1,15 +1,18 @@
 @import "../../settings";
 
-$result-list-checkbox-border-color: $color-primary;
 $result-list-checkbox-bg-color: $color-secondary;
+$result-list-checkbox-checked-bg-color: $color-secondary;
+$result-list-checkbox-checked-border-color: $color-primary;
+$result-list-checkbox-checked-label-color: $result-list-checkbox-checked-border-color;
 
-.selectron__result-list__item {
+.result-list__item {
   flex: 1 0 250px;
 }
 
 .awesome-checkbox {
-  position: relative;
   display: inline-block;
+  width: 100%;
+  position: relative;
   margin-bottom: 3px;
   cursor: pointer;
 
@@ -18,10 +21,10 @@ $result-list-checkbox-bg-color: $color-secondary;
 
     &:checked {
       + span {
-        color: $result-list-checkbox-border-color;
+        color: $result-list-checkbox-checked-label-color;
 
         &::before {
-          background: $result-list-checkbox-border-color;
+          background: $result-list-checkbox-checked-border-color;
         }
       }
     }
@@ -43,7 +46,7 @@ $result-list-checkbox-bg-color: $color-secondary;
       left: 1px;
       background: $result-list-checkbox-bg-color;
       border: 4px solid #FFF;
-      outline: 1px solid #CCC;
+      outline: 1px solid $result-list-checkbox-border-color;
       cursor: pointer;
       content: '';
     }

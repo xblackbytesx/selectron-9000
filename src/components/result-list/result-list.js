@@ -15,7 +15,7 @@ class ResultList extends Component {
 
   render() {
     return (
-      <div className={`selectron__result-list selectron__result-list--${this.state.expanded ? `expanded` : `collapsed`}`}>
+      <div className={`result-list result-list--${this.state.expanded ? `expanded` : `collapsed`}`}>
         <ul>
           {
             this.props.props.map((value, index) => {

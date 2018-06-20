@@ -3,20 +3,18 @@
 $result-list-checkbox-border-color: $color-primary;
 $result-list-checkbox-bg-color: $color-secondary;
 
-.selectron {
-  &__result-list {
-    height: 250px;
-    border-width: $gutter 0;
-    border-style: solid;
-    border-color: $primary-bg-color;
-    overflow-y: scroll;
+.result-list {
+  height: 250px;
+  border-width: $gutter 0;
+  border-style: solid;
+  border-color: $bg-color-primary;
+  overflow-y: scroll;
 
-    ul {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-      display: flex;
-      flex-flow: row wrap;
-    }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
   }
 }
