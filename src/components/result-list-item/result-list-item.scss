@@ -58,9 +58,5 @@ $result-list-checkbox-outline-color: $border-color-primary;
       cursor: pointer;
       content: '';
     }
-
-    &:hover::after {
-      opacity: 0.5;
-    }
   }
 }

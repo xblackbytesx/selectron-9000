@@ -1,13 +1,12 @@
 @import "../../settings";
 
-$result-list-checkbox-border-color: $color-primary;
-$result-list-checkbox-bg-color: $color-secondary;
+$result-list-bg-color: $bg-color-primary;
 
 .result-list {
   height: 250px;
   border-width: $gutter 0;
   border-style: solid;
-  border-color: $bg-color-primary;
+  border-color: $result-list-bg-color;
   overflow-y: scroll;
 
   ul {
